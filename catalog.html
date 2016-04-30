@@ -22,10 +22,10 @@
                 <div class="header-links">
                     <ul class="header-links__list">
                         <li class="header-links__item">
-                            <a class="header-links__link" href="#">Закладки:<span>0</span></a>
+                            <a class="header-links__link" href="#">Закладки:<span class="header-links__bookmarks">0</span></a>
                         </li>
                         <li class="header-links__item">
-                            <a class="header-links__link" href="#">Корзина:<span>0</span></a>
+                            <a class="header-links__link" href="#">Корзина:<span class="header-links__basket">0</span></a>
                         </li>
                     </ul>
                 </div>
@@ -33,30 +33,26 @@
                     <a class="checkout__link" href="#">Оформить заказ</a>
                 </div>
             </div>
-            <div class="header-middle">
+            <div class="header-bottom">
                 <div class="info">
                     <div class="description">
-                        <p class="description__text">
+                        <span class="description__text">
                             Интернет-магазин строительных материалов и инструментов для ремонта
-                        </p>
+                        </span>
                     </div>
                     <div class="contacts">
-                        <div class="contacts__phone">
-                            <p class="contacts__phone-number">
-                                +7 (812) 555-05-55
-                            </p>
-                        </div>
-                        <div class="contacts__address">
-                            <p class="contacts__address-text">
-                                г.Санкт-Петербург, ул.Б.Конюшенная д.19/8
-                            </p>
-                        </div>
+                        <span class="contacts__phone">
+                            +7 (812) 555-05-55
+                        </span>
+                        <span class="contacts__address">
+                            г.Санкт-Петербург, ул.Б.Конюшенная д.19/8
+                        </span>
                     </div>
                 </div>
                 <div class="user-block">
                     <div class="user-profile">
-                        <p class="user-profile__name"></p>
-                        <a class="user-profile__sign-out" href="#"></a>
+                        <span class="user-profile__name">Равшан Джамшутович</span>
+                        <a class="user-profile__sign-out" href="#">Выйти</a>  <!--здесь вместо Выйти будет иконка-->
                     </div>
                     <div class="user-links">
                         <a class="user-links__orders" href="#">Мои заказы</a>
@@ -64,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
+            <nav class="main-navigation">
                 <ul class="navigation">
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">Главная</a>
@@ -88,10 +84,80 @@
                         <a class="navigation__link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
-    <main class="wrapper"></main>
+    <main class="wrapper">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="index.html">Home</a></li> <!--вместо Home будет иконка-->
+                <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+                <li class="breadcrumbs__item"><a href="#">Инструмент</a></li>
+                <li class="breadcrumbs__item"><a href="#">Перфораторы</a></li>
+            </ul>
+        </div>
+        <div class="catalog-title">
+            <h1 class="catalog-title__text">Перфораторы</h1>
+        </div>
+        <div class="filter">
+            <span class="filter__title">Фильтр:</span> 
+            <form class="filter-form" action="#" method="">
+                <fieldset>
+                    <legend>Цена:</legend>
+                    <div class="filter-form__slider"></div>
+                    <input type="text" id="min-cost" value="0">
+                    <input type="text" id="max-cost" value="30000">
+                </fieldset>
+                <fieldset>
+                    <legend>Производители:</legend>
+                    <ul class="producer">
+                        <li class="producer__item">
+                            <label for="bosh">Bosh</label>
+                            <input type="checkbox" name="bosh" id="bosh" checked>
+                        </li>
+                        <li class="producer__item">
+                            <label for="interskol">Интерскол</label>
+                            <input type="checkbox" name="interskol" id="interskol">
+                        </li>
+                        <li class="producer__item">
+                            <label for="makita">Makita</label>
+                            <input type="checkbox" name="makita" id="makita" checked>
+                        </li>
+                        <li class="producer__item">
+                            <label for="dewalt">Dewalt</label>
+                            <input type="checkbox" name="dewalt" id="dewalt">
+                        </li>
+                        <li class="producer__item">
+                            <label for="hitachi">Hitachi</label>
+                            <input type="checkbox" name="hitachi" id="hitachi">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Питание:</legend>
+                    <ul class="power">
+                        <li class="power__item">
+                            <label for="acc">Аккумуляторные</label>
+                            <input type="radio" name="power" value="accum" id="acc">
+                        </li>
+                        <li class="power__item">
+                            <label for="net">Сетевые</label>
+                            <input type="radio" name="power" value="network" id="net">
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </div>
+        <div class="product"></div>
+        <div class="product-description">
+            <h2>Пара слов о перфораторах</h2>
+            <p>
+                Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+        </div>
+    </main>
     <footer class="main-footer">
         <div class="wrapper">
             <div class="footer-top">
