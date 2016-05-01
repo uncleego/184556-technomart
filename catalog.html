@@ -51,8 +51,11 @@
                 </div>
                 <div class="user-block">
                     <div class="user-profile">
-                        <span class="user-profile__name">Равшан Джамшутович</span>
-                        <a class="user-profile__sign-out" href="#">Выйти</a>  <!--здесь вместо Выйти будет иконка-->
+                        <a class="user-profile__icon-link" href="#"></a>      <!--иконка пользователя-->
+                        <a class="user-profile__name-link" href="#">
+                            <span class="user-profile__name">Равшан Джамшутович</span>
+                        </a>
+                        <a class="user-profile__sign-out" href="#"></a>  <!--иконка выхода-->
                     </div>
                     <div class="user-links">
                         <a class="user-links__orders" href="#">Мои заказы</a>
@@ -90,15 +93,13 @@
     <main class="wrapper">
         <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a href="index.html">Home</a></li> <!--вместо Home будет иконка-->
+                <li class="breadcrumbs__item"><a href="index.html">Home</a></li>     <!--вместо Home иконка-->
                 <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
                 <li class="breadcrumbs__item"><a href="#">Инструмент</a></li>
                 <li class="breadcrumbs__item"><a href="#">Перфораторы</a></li>
             </ul>
         </div>
-        <div class="catalog-title">
-            <h1 class="catalog-title__text">Перфораторы</h1>
-        </div>
+        <h1 class="catalog-title">Перфораторы</h1>
         <div class="filter">
             <span class="filter__title">Фильтр:</span> 
             <form class="filter-form" action="#" method="">
@@ -149,7 +150,170 @@
                 <button type="submit">Показать</button>
             </form>
         </div>
-        <div class="product"></div>
+        <div class="main-block">
+            <div class="control">
+                <span class="control__sort">Сортировка:</span>
+                <a class="control__how" href="#">По цене</a>
+                <a class="control__how" href="#">По типу</a>
+                <a class="control__how" href="#">По функционалу</a>
+                <a class="control__direction" href="#">up</a>           <!--вместо up down треугольники-->
+                <a class="control__direction" href="#">down</a>
+            </div>
+            <div class="product">
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 3000</span>
+                    </h2>
+                    <span class="old-price">22500</span>
+                    <span class="new-price">15500</span>
+                </div> 
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 6000</span>
+                    </h2>
+                    <span class="old-price">30500</span>
+                    <span class="new-price">25500</span>
+                </div>
+                <div class="product-item product-item--new">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 2000</span>
+                    </h2>
+                    <span class="old-price"></span>
+                    <span class="new-price">12500</span>
+                </div>
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 3000</span>
+                    </h2>
+                    <span class="old-price">22500</span>
+                    <span class="new-price">15500</span>
+                </div> 
+                <div class="product-item product-item--new">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 6000</span>
+                    </h2>
+                    <span class="old-price">30500</span>
+                    <span class="new-price">25500</span>
+                </div>
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 2000</span>
+                    </h2>
+                    <span class="old-price"></span>
+                    <span class="new-price">12500</span>
+                </div>
+                <div class="product-item product-item--new">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 3000</span>
+                    </h2>
+                    <span class="old-price">22500</span>
+                    <span class="new-price">15500</span>
+                </div> 
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 6000</span>
+                    </h2>
+                    <span class="old-price">30500</span>
+                    <span class="new-price">25500</span>
+                </div>
+                <div class="product-item">
+                    <div class="item-snippet">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <div class="item-snippet-hover">
+                            <a class="item-snippet-hover__buy" href="#open-modal">Купить</a><!--вызывает модальное окно--> 
+                            <a class="item-snippet-hover__to-bookmarks" type="button">В закладки</a>
+                        </div>
+                    </div>
+                    <h2 class="product-item__title">
+                        <span class="product-item__category">Перфоратор</span>
+                        <span class="product-item__name">Bosh bfg 2000</span>
+                    </h2>
+                    <span class="old-price"></span>
+                    <span class="new-price">12500</span>
+                </div>
+                <div id="open-modal" class="modal-dialog">
+                    <a class="close" href="#close" title="Закрыть">X</a>
+                    <div class="modal-info">
+                        <img src="http://placehold.it/150x100" width="" height="" alt="">
+                        <span class="modal-info__add">Товар добавлен в корзину!</span>
+                    </div>
+                    <div class="modal-links">
+                        <a class="modal-links__checkout" href="#">Оформить заказ</a>
+                        <a class="modal-links__back" href="#close">Продолжить покупки</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <a class="pages__btn" href="#">1</a>
+                <a class="pages__btn" href="#">2</a>
+                <a class="pages__btn" href="#">3</a>
+                <a class="pages__btn" href="#">Следующая</a>
+            </div>
+        </div>
         <div class="product-description">
             <h2>Пара слов о перфораторах</h2>
             <p>
@@ -201,16 +365,10 @@
                     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
                 </div>
                 <div class="feedback">
-                    <p>
-                        Обратная связь:<br>
-                        <span>mail@htmlacademy.ru</span>
-                    </p>
-                </div>
-                <div class="created-by">
-                    <p>
-                        Разработано —<br>
-                        <span>htmlacademy.ru</span>
-                    </p>
+                    <span class="feedback__text">Обратная связь:</span><br>
+                    <span class="feedback__address">mail@htmlacademy.ru</span>
+                    <span class="feedback__text">Разработано —</span><br>
+                    <span class="feedback__address">htmlacademy.ru</span>
                 </div>
             </div>
         </div>
