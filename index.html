@@ -10,7 +10,7 @@
             <div class="header-top">
                 <div class="header-logo">
                     <a class="header-logo__link" href="index.html">
-                      <img class="header-logo__img" src="http://placehold.it/150x100" width="150" height="100" alt="logo">
+                        <img class="header-logo__img" src="http://placehold.it/150x100" width="" height="" alt="logo">
                     </a>
                 </div>
                 <div class="header-search">
@@ -22,10 +22,10 @@
                 <div class="header-links">
                     <ul class="header-links__list">
                         <li class="header-links__item">
-                            <a class="header-links__link" href="#">Закладки:<span>0</span></a>
+                            <a class="header-links__link" href="#">Закладки:<span class="header-links__bookmarks">0</span></a>
                         </li>
                         <li class="header-links__item">
-                            <a class="header-links__link" href="#">Корзина:<span>0</span></a>
+                            <a class="header-links__link" href="#">Корзина:<span class="header-links__basket">0</span></a>
                         </li>
                     </ul>
                 </div>
@@ -33,24 +33,20 @@
                     <a class="checkout__link" href="#">Оформить заказ</a>
                 </div>
             </div>
-            <div class="header-middle">
+            <div class="header-bottom">
                 <div class="info">
                     <div class="description">
-                        <p class="description__text">
+                        <span class="description__text">
                             Интернет-магазин строительных материалов и инструментов для ремонта
-                        </p>
+                        </span>
                     </div>
                     <div class="contacts">
-                        <div class="contacts__phone">
-                            <p class="contacts__phone-number">
-                                +7 (812) 555-05-55
-                            </p>
-                        </div>
-                        <div class="contacts__address">
-                            <p class="contacts__address-text">
-                                г.Санкт-Петербург, ул.Б.Конюшенная д.19/8
-                            </p>
-                        </div>
+                        <span class="contacts__phone">
+                            +7 (812) 555-05-55
+                        </span>
+                        <span class="contacts__address">
+                            г.Санкт-Петербург, ул.Б.Конюшенная д.19/8
+                        </span>
                     </div>
                 </div>
                 <div class="user-block">
@@ -62,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="header-bottom">
+            <nav class="main-navigation">
                 <ul class="navigation">
                     <li class="navigation__item">
                         <a class="navigation__link" href="#">Главная</a>
@@ -86,7 +82,7 @@
                         <a class="navigation__link" href="#">Контакты</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>   
     <main class="wrapper">
@@ -218,7 +214,7 @@
                       <span class="popular-bottom-item__new-price">25500 Р.</span>
                   </div>
               </div>
-              <div class="popular-bottom-item">
+              <div class="popular-bottom-item popular-bottom-item--new">
                   <div class="popular-bottom-item__img">
                       <a class="popular-bottom-item__img-link" href="#">
                           <img src="http://placehold.it/200x160" alt="">
@@ -284,52 +280,53 @@
             </div>
         </div>
         <div class="service">
-            <div class="service-top">
-                <h2 class="service-top__title">Сервисы</h2>
-                <p class="service-top__text">
-                    Хороший интернет-магазин отличается от плохого не только ценами!
-                    Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-                </p>
+            <h2 class="service__title">Сервисы</h2>
+            <p class="service__text">
+                Хороший интернет-магазин отличается от плохого не только ценами!
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+            <div class="service-menu">
+                <ul class="service-menu__list">
+                    <li class="service-menu__item">
+                        <button class="service-menu__btn" type="button">Доставка</button>
+                    </li>
+                    <li class="service-menu__item">
+                        <button class="service-menu__btn" type="button">Гарантия</button>
+                    </li>
+                    <li class="service-menu__item">
+                        <button class="service-menu__btn" type="button">Кредит</button>
+                    </li>
+                </ul>
             </div>
-            <div class="service-bottom">
-                <div class="service-menu">
-                    <ul class="service-menu__list">
-                        <li class="service-menu__item">
-                            <a class="service-menu__link" href="#">Доставка</a>
-                        </li>
-                        <li class="service-menu__item">
-                            <a class="service-menu__link" href="#">Гарантия</a>
-                        </li>
-                        <li class="service-menu__item">
-                            <a class="service-menu__link" href="#">Кредит</a>
-                        </li>
-                    </ul>
+            <div class="item-description">
+                <div class="item-description__delivery">
+                    <h3 class="item-description__title">Доставка</h3>
+                    <p class="item-description__text">
+                        Мы с удовольствием доставим ваш товар прямо 
+                        к вашему подъезду совершенно бесплатно!
+                        Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    </p>
                 </div>
-                <div class="item-description">
-                    <div class="item-description__delivery">
-                        <h3 class="item-description__title">Доставка</h3>
-                        <p class="item-description__text">
-                            Мы с удовольствием доставим ваш товар прямо 
-                            к вашему подъезду совершенно бесплатно!
-                            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-                        </p>
-                    </div>
-                    <div class="item-description__guarantee">
-                        <h3 class="item-description__title">Гарантия</h3>
-                        <p class="item-description__text">
-                            Если купленный у нас товар поломается или заискрит, 
-                            а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-                        </p>
-                    </div>
-                    <div class="item-description__credit">
-                        <h3 class="item-description__title">Кредит</h3>
-                        <p class="item-description__text">
-                            Залезть в долговую яму стало проще! 
-                            Кредитные консультанты придут вам на помощь.
-                        </p>
-                        <a class="item-description__link" href="#">Отправить заявку</a>
-                    </div>
+                <div class="item-description__guarantee">
+                    <h3 class="item-description__title">Гарантия</h3>
+                    <p class="item-description__text">
+                        Если купленный у нас товар поломается или заискрит, 
+                        а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+                    </p>
                 </div>
+                <div class="item-description__credit">
+                    <h3 class="item-description__title">Кредит</h3>
+                    <p class="item-description__text">
+                        Залезть в долговую яму стало проще! 
+                        Кредитные консультанты придут вам на помощь.
+                    </p>
+                    <a class="item-description__link" href="#">Отправить заявку</a>
+                </div>
+            </div>
+            <div class="service-background">
+                <img src="http://placehold.it/150x100" width="" height="" alt="">
+                <img src="http://placehold.it/150x100" width="" height="" alt="">
+                <img src="http://placehold.it/150x100" width="" height="" alt="">
             </div>
         </div>
         <div class="information">
@@ -373,8 +370,20 @@
                     </a>
                 </div>
                 <div class="contacts-write-us">
-                    <a class="contacts-write-us__link" href="#">Заблудились? Напишите нам!</a>
+                    <a class="contacts-write-us__link" href="#modal-write-us">Заблудились? Напишите нам!</a>
                 </div>
+            </div>
+            <div id="modal-write-us" class="modal-dialog">
+                <a class="close" href="#close" title="Закрыть">X</a>
+                <form>
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+                    <label for="email">Ваш e-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+                    <label for="letter">Текст письма:</label>
+                    <textarea id="letter" name="letter" placeholder="В свободной форме"></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </main>
@@ -421,16 +430,10 @@
                     <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
                 </div>
                 <div class="feedback">
-                    <p>
-                        Обратная связь:<br>
-                        <span>mail@htmlacademy.ru</span>
-                    </p>
-                </div>
-                <div class="created-by">
-                    <p>
-                        Разработано —<br>
-                        <span>htmlacademy.ru</span>
-                    </p>
+                    <span class="feedback__text">Обратная связь:</span><br>
+                    <span class="feedback__address">mail@htmlacademy.ru</span>
+                    <span class="feedback__text">Разработано —</span><br>
+                    <span class="feedback__address">htmlacademy.ru</span>
                 </div>
             </div>
         </div>
