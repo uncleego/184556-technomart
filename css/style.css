@@ -1063,6 +1063,7 @@ input::-webkit-input-placeholder { color: white; }
     margin-right: 6px;
 }
 
+/*
 .pagination-current {
     position: absolute;
     z-index: 3;
@@ -1073,6 +1074,20 @@ input::-webkit-input-placeholder { color: white; }
     border-radius: 50%;
     background-color: #ef414d;
 }
+*/
+
+.pagination-current.slider-box-pagination__item::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 2px;
+    left: 2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ef414d;
+}
+
 
 .popular {
     margin-bottom: 20px;
