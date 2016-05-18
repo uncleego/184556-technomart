@@ -49,7 +49,7 @@ h1 {
     line-height: 30px;
     color: #32425c;
     font-weight: normal;
-    font-family: "Cuprum"; 
+    font-family: "Cuprum", "Arial", sans-serif; 
 }
 
 h2 {
@@ -57,7 +57,7 @@ h2 {
     line-height: 30px;
     color: #32425c;
     font-weight: normal;
-    font-family: "Cuprum"; 
+    font-family: "Cuprum", "Arial", sans-serif; 
 }
 
 /*----------------------------------Сетка----------------------------------*/
@@ -80,7 +80,6 @@ h2 {
     padding: 0 10px;
     margin: 0 auto;
 }
-
 
 /*-------------------------Для блока main-header---------------------------*/
 .main-header {
@@ -161,7 +160,6 @@ h2 {
     border: none;
     width: 220px;
     min-height: 42px;
-/*    padding-left: 50px;*/
     color: #000;
     background-color: #293449; 
     font-size: 17px;
@@ -170,8 +168,6 @@ h2 {
 .header-search__input:hover {
     background-color: #212a3a;
 }
-
-.header-search__input:focus 
 
 .header-search__input:focus {
     outline: none;
@@ -182,7 +178,9 @@ h2 {
     background-color: #fff;
 }
 
-input::-webkit-input-placeholder { color: white; }
+input::-webkit-input-placeholder { 
+    color: white; 
+}
 
 .header-menu {
     display: inline-block;
@@ -274,8 +272,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .info-contacts {
     float: right;
-    width: 310px;
-    
+    width: 310px;   
 }
 
 .contacts__phone {
@@ -307,6 +304,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .user-block__sign-in {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     left: 19px;
     width: 46px;
@@ -333,6 +331,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .user-block__registration {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     left: 19px;
     width: 148px;
@@ -356,6 +355,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .user-block__auto {
     display: inline-block;
+    vertical-align: top;
     background-color: #fff;
     font-size: 0;
 }
@@ -363,6 +363,7 @@ input::-webkit-input-placeholder { color: white; }
 .user-block__sign-out {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 203px;
     min-height: 45px;
     font-size: 21px;
@@ -410,6 +411,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .user-block__decoration {
     display: inline-block;
+    vertical-align: baseline;
     width: 4px;
     height: 5px;
     background: #f2f6f8 url("../img/picture-user-links.png") no-repeat 50% 50%;
@@ -458,8 +460,6 @@ input::-webkit-input-placeholder { color: white; }
 .navigation__link:active {
     background-color: #1d2739;
 }
-
-
 
 /*Добавляем иконки*/
 .header-search__btn::after {
@@ -558,6 +558,7 @@ input::-webkit-input-placeholder { color: white; }
     height: 17px;
     background-position: -10px -986px;
 }
+
 /*---------------------------------Для блока main-footer--------------------------------*/
 .main-footer {
     min-height: 300px;
@@ -635,8 +636,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .footer-menu-top__item {
     display: inline;
-    margin-right: 58px;
-    
+    margin-right: 58px;   
 }
 
 .footer-menu-top__link:hover {
@@ -659,8 +659,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .footer-menu-bottom__item {
     display: inline;
-    margin-right: 59px;
-    
+    margin-right: 59px;    
 }
 
 .main-footer .footer-menu-bottom__link {
@@ -691,6 +690,7 @@ input::-webkit-input-placeholder { color: white; }
 .social-btn {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 42px;
     height: 42px;
     background-color: #212a3a;
@@ -742,7 +742,6 @@ input::-webkit-input-placeholder { color: white; }
 }
 
 /*Добавляем иконки*/
-
 .social-btn::before {
     content: "";
     position: absolute;
@@ -792,6 +791,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .promo {
     display: inline-block;
+    vertical-align: top;
     position: relative; 
     width: 300px;
     min-height: 123px; 
@@ -822,6 +822,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .promo-text__link {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 38px;
     text-decoration: none;
@@ -953,6 +954,7 @@ input::-webkit-input-placeholder { color: white; }
     font-size: 18px;
     margin-right: 20px;
     float: left;
+    overflow: hidden;
 }
 
 .slider-img__1 {
@@ -977,7 +979,6 @@ input::-webkit-input-placeholder { color: white; }
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 8px;
-   
 }
 
 .slider-text__content {
@@ -1019,6 +1020,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .slider-catalog {
     display: inline-block;
+    vertical-align: top;
     position: absolute;
     z-index: 2;
     left: 25px;
@@ -1054,6 +1056,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .slider-box-pagination__item {
     display: inline-block;
+    vertical-align: baseline;
     position: relative;
     z-index: 2;
     width: 10px;
@@ -1062,19 +1065,6 @@ input::-webkit-input-placeholder { color: white; }
     background-color: #fff;
     margin-right: 6px;
 }
-
-/*
-.pagination-current {
-    position: absolute;
-    z-index: 3;
-    top: 2px;
-    left: 2px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #ef414d;
-}
-*/
 
 .pagination-current.slider-box-pagination__item::before {
     content: "";
@@ -1087,7 +1077,6 @@ input::-webkit-input-placeholder { color: white; }
     border-radius: 50%;
     background-color: #ef414d;
 }
-
 
 .popular {
     margin-bottom: 20px;
@@ -1139,9 +1128,10 @@ input::-webkit-input-placeholder { color: white; }
 }
 
 .popular-bottom-item {
-    width: 218px;
-    margin-right: 20px;
     display: inline-block;
+    vertical-align: top;
+    width: 218px;
+    margin-right: 20px; 
     font-size: 18px;
     vertical-align: top;
     min-height: 316px;
@@ -1363,10 +1353,10 @@ input::-webkit-input-placeholder { color: white; }
 
 .brands-item__container {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 20px;
     margin-right: 20px;
     font-size: 18px;
-    vertical-align: top;
     border: 1px solid #e7e7e7;
 }
 
@@ -1380,58 +1370,23 @@ input::-webkit-input-placeholder { color: white; }
 
 .brands-item__link {
     display: inline-block;
+    vertical-align: top;
+    position: relative;
     width: 218px;
     min-height: 143px; 
 }
 
 .brands-item__link:hover {
     box-shadow: 0 10px 25px 5px rgba(122,122,122,0.5);
-/*    box-shadow: 5px 5px 5px rgba(122,122,122,0.5);*/
-/*    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);*/
 } 
 
 .brands-item__picture {
-    position: relative;
-}
-
-.brands-item__picture--1 {
-    top: 53px;
-    left: 46px;
-}
-
-.brands-item__picture--2 {
-    top: 50px;
-    left: 47px;
-}
-
-.brands-item__picture--3 {
-    top: 48px;
-    left: 36px;
-}
-
-.brands-item__picture--4 {
-    top: 21px;
-    left: 8px;
-}
-
-.brands-item__picture--5 {
-    top: 58px;
-    left: 27px;
-}
-
-.brands-item__picture--6 {
-    top: 35px;
-    left: 47px;
-}
-
-.brands-item__picture--7 {
-    top: 23px;
-    left: 34px;
-}
-
-.brands-item__picture--8 {
-    top: 34px;
-    left: 9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .service {
@@ -1469,8 +1424,7 @@ input::-webkit-input-placeholder { color: white; }
 .service-menu {
     width: 240px;
     float: left;
-    margin-right: 60px;
-   
+    margin-right: 60px;   
 }
 
 .service-menu__list {
@@ -1509,10 +1463,11 @@ input::-webkit-input-placeholder { color: white; }
 }
 
 .service-menu__btn:active, .service-menu__btn:focus {
-  outline: none;
+    outline: none;
 }
+
 .service-menu__btn::-moz-focus-inner {
-  border: 0;
+    border: 0;
 }
 
 .service-menu__btn-text {
@@ -1525,8 +1480,7 @@ input::-webkit-input-placeholder { color: white; }
     float: right;
     width: 620px;
     min-height: 280px;
-    position: relative;
-    
+    position: relative;    
 }
 
 .service-slider__1 {
@@ -1577,6 +1531,8 @@ input::-webkit-input-placeholder { color: white; }
     position: absolute;
     top: 60px;
     left: 1px;
+    max-height: 220px;
+    overflow: hidden;
 }
 
 .service-slide-current {
@@ -1662,8 +1618,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .contacts-title__text {
     text-transform: uppercase;
-    margin-top: 80px;
-    
+    margin-top: 80px;    
 }
 
 .contacts-map__text {
@@ -1673,6 +1628,11 @@ input::-webkit-input-placeholder { color: white; }
     width: 185px;
     margin-top: 25px;
     margin-bottom: 33px;
+}
+
+.contacts-map__link img {
+    max-height: 158px;
+    max-width: 300px;
 }
 
 .contacts-write-us__link {
@@ -1788,8 +1748,7 @@ input::-webkit-input-placeholder { color: white; }
     position: relative;
     top: 7px;
     left: 18px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 
 .filter-form fieldset {
@@ -1896,15 +1855,11 @@ input::-webkit-input-placeholder { color: white; }
 
 .catalog-control__direction {
     display: inline-block;
-    position: relative;
     vertical-align: top;
+    position: relative;
     width: 20px;
     height: 38px;
     margin-right: 7px;
-}
-
-.catalog-control__direction--active-up {
-    
 }
 
 .catalog-product {
@@ -1925,6 +1880,7 @@ input::-webkit-input-placeholder { color: white; }
 .catalog-pages__btn {
     font-family: "PT Sans", "Arial", sans-serif;
     display: inline-block;
+    vertical-align: top;
     min-width: 36px;
     height: 36px;
     background-color: #fff;
@@ -2037,9 +1993,7 @@ input::-webkit-input-placeholder { color: white; }
 }
 
 /*-----------------------------Pop-up index.html---------------------------------*/
-
 .contacts-modal-dialog {
-/*    display: none;*/
     position: fixed;
     z-index: 200;
     left: 50%;
@@ -2089,6 +2043,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .contacts-modal-dialog__name {
     display: inline-block;
+    vertical-align: top;
     margin-left: 80px;
     margin-top: 42px;
     margin-right: 15px;
@@ -2096,6 +2051,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .contacts-modal-dialog__mail {
     display: inline-block;
+    vertical-align: top;
     margin-top: 42px;
     margin-right: 80px;
 }
@@ -2129,6 +2085,7 @@ input::-webkit-input-placeholder { color: white; }
 
 .contacts-modal-dialog label {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 5px;
 }
 
@@ -2189,7 +2146,6 @@ input::-webkit-input-placeholder { color: white; }
 }
 
 /*--------------------------------Pop-up catalog.html------------------------------*/
-
 .product-modal-dialog {
     position: fixed;
     z-index: 200;
